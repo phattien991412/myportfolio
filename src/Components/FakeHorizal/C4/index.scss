@@ -1,0 +1,53 @@
+@use "../../../sass/" as *;
+@import "../../../sass/responsive";
+
+.section_4 {
+  width: 100%;
+  height: 100%;
+
+  h3 {
+    text-align: center;
+    font-size: 36px;
+    padding: 2rem 0 0 0;
+  }
+  .wrap_svg {
+   
+    height: 600px;
+    overflow: hidden;
+
+    &_line {
+      width: 100%;
+      height: 300px;
+      position: fixed;
+      left: -27%;
+      top: 10%;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &_bulb {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+      width: 40%;
+
+      svg {
+        width: 50%;
+      }
+    }
+  }
+
+  .coming_soon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    
+    svg {
+      width: 100%;
+    }
+  }
+}

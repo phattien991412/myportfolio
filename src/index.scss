@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  overscroll-behavior: none;
+  height: 100vh;
+  overflow-x: hidden;
+  /* background: #000; */
+  // cursor: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+:root {
+  --dark: #1d1d1d;
+  --grey-dark: #414141;
+  --light: #fff;
+  --mid: #ededed;
+  --grey: #989898;
+  --gray: #989898;
+  --green: #28a92b;
+  --green-dark: #4e9815;
+  --green-light: #6fb936;
+  --blue: #2c7ad2;
+  --purple: #8d3dae;
+  --red: #c82736;
+  --orange: #e77614;
+  accent-color: var(--green);
+}
+
+::selection {
+  background: rgb(255, 196, 0);
+  color: #000;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+html *::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 26px;
+  background: #e77614;
+  position: absolute;
+}

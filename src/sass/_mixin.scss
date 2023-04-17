@@ -1,0 +1,52 @@
+@mixin flexProperties($ai, $jc) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin maxWidth($percent) {
+  max-width: $percent;
+  margin: 0 auto;
+}
+
+@mixin gridPropertiesCol($col) {
+  display: grid;
+  grid-template-columns: repeat($col, minmax(0, 1fr));
+}
+
+@mixin gridPropertiesRow($row) {
+  display: grid;
+  grid-template-rows: repeat($row, minmax(0, 1fr));
+}
+
+@mixin textLinear() {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: monospace;
+  background: -webkit-linear-gradient(
+    94.53deg,
+    #ecd773 9.59%,
+    #fdfcc9 42.98%,
+    #fffedd 79.28%,
+    #c8992f 115.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin textNormal() {
+  font-size: 16px;
+  font-family: monospace;
+  letter-spacing: 1;
+  text-align: justify;
+}
+
+@mixin imgProperties() {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@mixin colSpan($span) {
+  grid-column: span $span / span $span;
+}

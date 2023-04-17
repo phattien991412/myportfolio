@@ -1,0 +1,142 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+  // color: #fff;
+  // margin-top: 20rem;
+  &_container {
+    height: 100%;
+    width: 1  00%;
+    display: flex;
+    flex-direction: column;
+
+    &_1 {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-top: 12rem;
+      h3 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+
+    &_2 {
+      max-width: 40%;
+      margin: 0 auto;
+      flex-grow: 1;
+      padding-top: 4rem;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      #hit {
+        font-size: 18px;
+        width: 50%;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          p:nth-child(1) {
+            font-size: 36px;
+            margin-right: 16px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #fff;
+            padding: 8px;
+            box-shadow: 0.4px 0px 2.2px rgba(0, 0, 0, 0.034),
+              1px 0px 5.3px rgba(0, 0, 0, 0.048),
+              1.9px 0px 10px rgba(0, 0, 0, 0.06),
+              3.4px 0px 17.9px rgba(0, 0, 0, 0.072),
+              6.3px 0px 33.4px rgba(0, 0, 0, 0.086),
+              15px 0px 80px rgba(0, 0, 0, 0.12);
+          }
+          p:nth-child(2) {
+            span {
+              font-size: 18px;
+              font-weight: 600;
+
+              &:first-child {
+                font-size: 24px;
+              }
+
+              &:last-child {
+                &:hover {
+                  color: #147efb;
+                  cursor: none;
+                }
+              }
+            }
+            a {
+              font-size: 18px;
+              font-weight: 600;
+              cursor: none;
+              &:hover {
+                color: #147efb;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            margin-left: 10rem;
+          }
+        }
+      }
+    }
+
+    &_3 {
+      width: 100%;
+      height: 15vh;
+      // background: #2d2e32;
+
+      .copyright {
+        padding-top: 6vh;
+        max-width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          li {
+            color: #000;
+            margin: 0 1rem;
+            font-size: 28px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #fff;
+            padding: 8px;
+            box-shadow: 0.4px 0px 2.2px rgba(0, 0, 0, 0.034),
+              1px 0px 5.3px rgba(0, 0, 0, 0.048),
+              1.9px 0px 10px rgba(0, 0, 0, 0.06),
+              3.4px 0px 17.9px rgba(0, 0, 0, 0.072),
+              6.3px 0px 33.4px rgba(0, 0, 0, 0.086),
+              15px 0px 80px rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
+    }
+  }
+}

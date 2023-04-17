@@ -1,0 +1,50 @@
+@import './breakpoints';
+
+// X Small devices (landscape phones view)
+@mixin xsm-down {
+    @media (max-width: #{$--screen-xsm-min}) {
+        @content;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin sm-down {
+    @media (max-width: #{$--screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin md-down {
+    @media (max-width: #{$--screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 920px and up)
+@mixin lmd-down {
+    @media (max-width: #{$--screen-lmd-min}) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg-down {
+    @media (max-width: #{$--screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices (desktops)
+@mixin xlg-down {
+    @media (max-width: #{$--screen-xlg-min}) {
+        @content;
+    }
+}
+
+// XX large devices (desktops)
+@mixin xxlg-down {
+    @media (max-width: #{$--screen-xxlg-min}) {
+        @content;
+    }
+}
