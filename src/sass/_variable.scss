@@ -1,0 +1,23 @@
+// Color
+
+@function get-color($key: "black") {
+  @return map-get($colors, $key);
+}
+
+$colors: (
+  "black": #000,
+  "white": #fff,
+  "main": #f8d205,
+  "bg-main": #f4be18,
+  "bg-main-1": rgba(248, 210, 5, 0.3),
+  "bg-main-2": rgb(54, 54, 54),
+  "text-1": #cbcbcb,
+  "fb": #046ce4,
+  "telegram": #28a8e9,
+  "linear-bg-main": linear-gradient(to top, #edc53d, #f8f290, #deb126, #f4f08c),
+  "linear-to-bottom": linear-gradient(to bottom, rgba(248, 210, 5, 0.3), #f4f08c, #edc53d),
+  "--nav":#35353f,
+  "--nav2":#3f3d56,
+);
+
+$bgColor: #f9f9f9;

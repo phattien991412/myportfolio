@@ -1,0 +1,76 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+$bg-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.6) 0%,
+  rgba(0, 0, 0, 0.3) 100%
+);
+.parallax {
+  section {
+    position: relative;
+    height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 0 auto;
+
+    .background {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .background_1 {
+      background-image: url("../../assets/img/mountain.jpg");
+    }
+    .background_2 {
+      background-image: url("../../assets/img/lake.jpg");
+    }
+    .background_3 {
+      background-image: url("../../assets/img/forest.jpg");
+    }
+    .background_4 {
+      background-image: url("../../assets/img/ocean.jpg");
+    }
+    .background_5 {
+      background-image: url("../../assets/img/field.jpg");
+    }
+
+    h1 {
+      color: black;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      // z-index: 1;
+      font-size: 3em;
+      font-weight: 400;
+      text-align: center;
+      max-width: 80%;
+
+      display: inline-block;
+      overflow: hidden;
+
+      span {
+        display: block;
+        transform: translateY(110%);
+        transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+    }
+  }
+
+  .active {
+    // &::after {
+    //   transform: scaleX(1);
+    //   transition-delay: 0s;
+    // }
+    span {
+      transform: translateY(0);
+      transition-delay: 0.5s;
+    }
+  }
+}

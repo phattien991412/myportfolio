@@ -1,0 +1,117 @@
+@use "../../sass/" as *;
+@import "../../sass/responsive";
+
+.container {
+  // overscroll-behavior: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  // contain: content;
+  // display: flex;
+  // flex-wrap: nowrap;
+  /* position: relative; */
+  @include xlg-down {
+    width: 100%;
+  }
+
+  .panel {
+    height: 100vh;
+    width: 102%;
+    will-change: transform;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  /* colors */
+
+  .content_1 {
+    z-index: 20;
+    width: 85% !important;
+  }
+
+  .content_2 {
+    z-index: 18;
+    // width: 85% !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content_3 {
+    z-index: 16;
+    background: #fff;
+    // padding-left: 15rem;
+    // margin-left: 48rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content_4 {
+    z-index: 14;
+    width: 100% !important;
+    background: #fff;
+    // padding-left: -15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .arrow {
+    position: fixed;
+    top: 48px;
+    right: 48px;
+    font-size: 70px;
+    color: #000;
+    z-index: 9999;
+    transition: 0.5s linear;
+  }
+
+  .activeArrow {
+    transform: rotateZ(180deg);
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    color: #000;
+    z-index: 99999;
+    text-align: right;
+
+    ul {
+      li {
+        position: relative;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 6px;
+          background: #424244;
+          border-radius: 4px;
+          scale: 0 1;
+          transform-origin: right;
+          transition: scale 0.25s;
+        }
+      }
+      .active::before {
+        scale: 1;
+        transform-origin: left;
+      }
+    }
+  }
+}

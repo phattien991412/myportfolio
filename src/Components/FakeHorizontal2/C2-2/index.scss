@@ -1,0 +1,26 @@
+@use "../../../sass/" as *;
+@import "../../../sass/responsive";
+
+.c22 {
+  width: 100%;
+  height: 100vh;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+
+    span {
+      &:nth-child(2) {
+        -webkit-text-fill-color: #f4cc43;
+      }
+      &:nth-child(3) {
+        -webkit-text-fill-color: #6fb936;
+      }
+    }
+  }
+}
