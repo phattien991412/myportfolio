@@ -2,6 +2,7 @@ import gsap from "gsap";
 import React, { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.scss";
+import project1 from "../../../assets/img/project1.png"
 
 gsap.registerPlugin(ScrollTrigger);
 const C3 = () => {
@@ -54,14 +55,14 @@ const C3 = () => {
   
   return (
     <div ref={c3Ref} className="section_3">
-    <div ref={refText3}>
+    {/* <div ref={refText3}>
       <h1>Project</h1>
       <p>
         <q>
         If you find a path with no obstacles, it probably doesn't lead anywhere.
         </q>
       </p>
-    </div>
+    </div> */}
 
     <div className="section_3_wrap">
       <div className="wrap_content">
@@ -71,6 +72,7 @@ const C3 = () => {
           ref={imgRef}
           className="img"
         >
+          <img src={project1} alt="project" />
         </div>
         <div className="detail">
           <div className="detail_content">

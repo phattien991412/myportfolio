@@ -20,6 +20,11 @@ ul, ol {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 :root {
   --dark: #1d1d1d;
   --grey-dark: #414141;
