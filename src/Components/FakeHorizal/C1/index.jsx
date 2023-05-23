@@ -112,6 +112,7 @@ const C1 = () => {
               functionality.
             </p>
             <p>Collaborated with the BE team to create and update APIs.</p>
+            <p>Build a core service to manage APIs.</p>
             <ul>
               <label htmlFor="">
                 Contributed to building the company's websites:

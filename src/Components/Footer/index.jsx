@@ -91,16 +91,16 @@ const Footer = () => {
             <ul>
               <li>
                 <Tooltip hasArrow label="Github" placement="top-end">
-                  <span>
+                  <a href="https://github.com/phattien991412" target="_blank" rel="noreferrer">
                     <AiFillGithub />
-                  </span>
+                  </a>
                 </Tooltip>
               </li>
               <li>
                 <Tooltip hasArrow label="LinkedIn" placement="top-end">
-                  <span>
+                  <a href="https://www.linkedin.com/in/ph%C3%A1t-tr%E1%BB%8Bnh-ti%E1%BA%BFn-60a269271/" target="_blank" rel="noreferrer">
                     <AiFillLinkedin />
-                  </span>
+                  </a>
                 </Tooltip>
               </li>
             </ul>
