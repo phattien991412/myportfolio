@@ -21,7 +21,7 @@ import project5 from "../../../assets/img/project5.png";
 // import { IoLogoJavascript } from "react-icons/io";
 
 gsap.registerPlugin(ScrollTrigger);
-const C2 = () => {
+const Section2 = () => {
   const c2Ref = useRef();
 
   useLayoutEffect(() => {
@@ -197,4 +197,4 @@ const C2 = () => {
   );
 };
 
-export default C2;
+export default Section2;

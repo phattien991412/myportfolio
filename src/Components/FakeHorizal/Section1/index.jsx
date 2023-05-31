@@ -5,7 +5,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import avatar from "../../../assets/img/avatar.jpg";
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
-const C1 = () => {
+const Section1 = () => {
   const c1Ref = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -155,4 +155,4 @@ const C1 = () => {
   );
 };
 
-export default C1;
+export default Section1;

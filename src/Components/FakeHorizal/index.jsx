@@ -12,8 +12,8 @@ import "./index.scss";
 import Footer from "../Footer";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-const C1 = lazy(() => import("./C1"));
-const C2 = lazy(() => import("./C2"));
+const Section1 = lazy(() => import("./Section1"));
+const Section2 = lazy(() => import("./Section2"));
 const Banner = lazy(() => import("../Banner"));
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -282,10 +282,10 @@ const Horizontal = () => {
         <Banner />
       </section>
       <section id="resume" className="panel content_2">
-        <C1 />
+        <Section1 />
       </section>
       <section id="skill" className="panel content_3">
-        <C2 />
+        <Section2 />
       </section>
       <section id="contact" className="panel content_4">
         <Footer />
