@@ -30,7 +30,6 @@
 
       @include md-down {
         max-width: 90%;
-        text-align: left;
       }
       h3 {
         font-size: 36px;
@@ -61,7 +60,6 @@
 
       @include md-down {
         max-width: 80%;
-        text-align: left;
       }
       h3 {
         font-size: 32px;
@@ -152,6 +150,7 @@
 
         @include xlg-down {
           max-width: 80%;
+          padding-bottom: 3rem;
         }
         h3 {
           font-size: 22px;
