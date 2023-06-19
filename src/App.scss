@@ -4,9 +4,9 @@
 .app {
   &_content {
     display: block;
-    @include xlg-down {
-      display: none;
-    }
+    // @include xlg-down {
+    //   display: none;
+    // }
   }
   
   .preLoad {
@@ -84,20 +84,20 @@
     }
   }
 
-  .message {
-    display: none;
-    height: 100vh;
-    max-width: 80%;
-    @include xlg-down {
-      // display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-    }
+  // .message {
+  //   display: none;
+  //   height: 100vh;
+  //   max-width: 80%;
+  //   @include xlg-down {
+  //     // display: block;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin: auto;
+  //   }
    
-    font-size: 20px;
-    text-align: center;
-    color: #e77614;
-  }
+  //   font-size: 20px;
+  //   text-align: center;
+  //   color: #e77614;
+  // }
 }

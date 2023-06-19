@@ -26,10 +26,12 @@ const Horizontal = () => {
   // const refS2 = useRef();
   // const refS3 = useRef();
 
+  const mm = gsap.matchMedia();
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      let sections = gsap.utils.toArray(".panel");
+      mm.add("(min-width: 1200px)", () => {
+        let sections = gsap.utils.toArray(".panel");
         // duration = 10;
         // sectionIncrement = duration / (sections.length - 1);
 
@@ -178,6 +180,7 @@ const Horizontal = () => {
       // Observer.create({
       //   target: "window",
       // })
+      })
     }, comp);
     return () => {
       ctx.revert();

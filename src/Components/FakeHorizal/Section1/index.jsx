@@ -9,12 +9,15 @@ const Section1 = () => {
   const c1Ref = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
+      const matchMediaQuery = window.matchMedia("(min-width: 1200px)");
+      const startValue = matchMediaQuery.matches ? "30% top" : "-10% top";
+
       gsap
         .timeline({
           scrollTrigger: {
             trigger: c1Ref.current,
             // containerAnimation: scrollTween,
-            start: "30% top",
+            start: startValue,
             end: "20% 20%",
             // markers: true,
             toggleActions: "play none none none "
@@ -38,28 +41,6 @@ const Section1 = () => {
           ease: "eslatic",
           stagger: 0.2
         });
-
-      // let section = document.querySelector(".text");
-
-      // let innerSection = gsap.to(document.querySelector(".text"), {
-      //   x: `-100vw`,
-      //   ease: "none",
-      //   paused: true
-      // });
-      // let progressTo = gsap.quickTo(innerSection, "progress", {ease: "power3", duration: parseFloat(section.dataset.scrub) || 0.1});
-      // gsap.to(section.querySelector("q"), {
-      //   x: `100vw`,
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     containerAnimation: scrollTween,
-      //     markers: true,
-      //     scrub: true,
-      //     trigger: section,
-      //     start: "left right",
-      //     end: "right left",
-      //     onUpdate: self => progressTo(self.progress)
-      //   }
-      // });
     }, c1Ref);
     return () => {
       ctx.revert();

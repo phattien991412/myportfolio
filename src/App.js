@@ -120,14 +120,7 @@ function App() {
       </div>
 
       <>
-        <h1 className="message">
-          It seems that your device has a resolution lower than 1200px, and
-          unfortunately, my website is not yet optimized for such smaller
-          screens. <br /> I apologize for any inconvenience this may cause.{" "}
-          <br /> I recommend accessing my website using a device with a higher
-          resolution than 1200px to ensure the best user experience. <br />{" "}
-          Thank you for your understanding.
-        </h1>
+
       </>
     </div>
   );

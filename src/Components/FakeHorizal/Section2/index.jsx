@@ -26,12 +26,14 @@ const Section2 = () => {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
+      const matchMediaQuery = window.matchMedia("(min-width: 1200px)");
+      const startValue = matchMediaQuery.matches ? "230% 10%" : "-10% top";
       gsap
         .timeline({
           scrollTrigger: {
             trigger: c2Ref.current,
             // containerAnimation: scrollTween,
-            start: "230% 10%",
+            start: startValue,
             end: "bottom 20%",
             // markers: true,
             toggleActions: "play none none none",

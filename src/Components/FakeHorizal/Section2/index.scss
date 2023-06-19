@@ -31,6 +31,17 @@
     height: 100vh;
     width: 60%;
     margin-inline: auto;
+
+    @include xlg-down {
+      width: 100%;
+      height: 100%;
+
+      padding: 3rem;
+    }
+
+    @include md-down {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     // grid-template-areas:
     //   "one two"
     //   "three four";
@@ -61,6 +72,10 @@
         height: 100%;
         object-fit: contain;
         padding: 12px;
+
+        @include xlg-down {
+          padding: 8px;
+        }
       }
 
       .flip-card-inner {
