@@ -34,6 +34,10 @@
     @include xxxlg-down {
       margin-top: 16px;
     }
+
+    @include md-down {
+      margin-left: 24px;
+    }
   }
 
   &_container {
@@ -63,6 +67,7 @@
 
     @include md-down {
       display: block;
+      margin-inline: 24px;
     }
 
     &_left {
@@ -84,6 +89,10 @@
         height: 420px;
         perspective: 1000px;
         font-family: sans-serif;
+
+        @include md-down {
+          width: 100%;
+        }
 
         img {
           width: 100%;

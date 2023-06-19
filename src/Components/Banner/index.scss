@@ -54,6 +54,10 @@
         font-weight: 500;
         position: relative;
 
+        @include sm-down {
+         font-size: 32px; 
+        }
+
         &::before {
           content: "";
           width: 500px;
@@ -77,11 +81,20 @@
           line-height: 106px;
           margin-top: 5rem;
         }
+
+        @include sm-down {
+         font-size: 72px; 
+         margin-top: 2rem;
+        }
       }
 
       button {
         &:hover {
           color: #000;
+        }
+        
+        @include sm-down {
+         margin-top: 2rem; 
         }
       }
     }
@@ -95,6 +108,11 @@
         margin-top: 7rem;
         padding-bottom: 3rem;
       }
+
+      @include sm-down {
+       margin-top: 2rem;   
+      }
+      
       h5 {
         font-weight: 600;
         font-size: 20px;

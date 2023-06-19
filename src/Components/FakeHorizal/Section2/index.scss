@@ -106,6 +106,10 @@
         border-radius: 1rem;
         padding: 0 2rem;
 
+        @include md-down {
+          padding-inline: 1rem;
+        }
+
         &::after {
           content: "";
           position: absolute;
@@ -132,6 +136,10 @@
         }
         ul {
           list-style-type: circle;
+
+          li span {
+            font-size: 16px;
+          }
 
           label {
             font-size: 18px;
