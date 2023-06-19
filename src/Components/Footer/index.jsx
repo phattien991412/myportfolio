@@ -20,7 +20,7 @@ const Footer = () => {
             trigger: footerRef.current,
             start: startValue,
             end: "20% 50%",
-            markers: true,
+            // markers: true,
             toggleActions: "play none none reset",
             oncancel: () => {
               ctx.revert();

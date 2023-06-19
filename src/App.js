@@ -15,7 +15,7 @@ function App() {
         .timeline({ defaults: { duration: 3 } })
         .to(loadingRef.current, {
           delay: 2,
-          yPercent: -100,
+          yPercent: -200,
           ease: "power4.out"
         });
     }, loadingRef);
