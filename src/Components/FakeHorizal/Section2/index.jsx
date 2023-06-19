@@ -77,7 +77,7 @@ const Section2 = () => {
       desc: "A clone UI of metaversus madness with full responsive",
       feature: "Animation with framer motion",
       tech: "HTML/SASS, Javascript, NextJs, Framer Motion",
-      link: "https://metaversusmadness47.netlify.app/"
+      link: "https://metamadness47.vercel.app/"
     },
     {
       img: project4,
