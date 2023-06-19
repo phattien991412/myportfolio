@@ -12,10 +12,10 @@ function App() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap
-        .timeline({ defaults: { duration: 3 } })
+        .timeline({ defaults: { duration: 5 } })
         .to(loadingRef.current, {
           delay: 2,
-          yPercent: -200,
+          yPercent: -150,
           ease: "power4.out"
         });
     }, loadingRef);
