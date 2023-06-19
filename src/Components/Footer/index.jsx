@@ -13,7 +13,7 @@ const Footer = () => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const matchMediaQuery = window.matchMedia("(min-width: 1200px)");
-      const startValue = matchMediaQuery.matches ? "400% 10%" : "-45% top";
+      const startValue = matchMediaQuery.matches ? "400% 10%" : "-60% top";
       gsap
         .timeline({
           scrollTrigger: {
