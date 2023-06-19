@@ -14,6 +14,8 @@
   /* position: relative; */
   @include xlg-down {
     width: 100%;
+    height: 100%;
+    position: relative;
   }
 
   .panel {
@@ -25,12 +27,24 @@
     left: 0;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+    @include xlg-down {
+      position: unset;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
   /* colors */
 
   .content_1 {
     z-index: 20;
     width: 85% !important;
+
+    @include xlg-down {
+      width: 100% !important;
+      z-index: 1;
+    }
   }
 
   .content_2 {
@@ -40,6 +54,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include xlg-down {
+     z-index: 1;     
+    }
   }
 
   .content_3 {
@@ -51,6 +68,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include xlg-down {
+     z-index: 1;     
+    }
   }
 
   .content_4 {
@@ -64,6 +84,9 @@
     align-items: center;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    @include xlg-down {
+     z-index: 1;     
+    }
   }
 
   .arrow {
@@ -74,6 +97,13 @@
     color: #000;
     z-index: 9999;
     transition: 0.5s linear;
+    @include xxxlg-down {
+      top: 16px;
+    }
+
+    @include xlg-down {
+      display: none;
+    }
   }
 
   .activeArrow {
@@ -88,12 +118,19 @@
     z-index: 99999;
     text-align: right;
 
+    @include xlg-down {
+     display: none;     
+    }
+
     ul {
       li {
         position: relative;
         font-weight: 600;
         font-size: 48px;
         line-height: 72px;
+        @include xxxlg-down {
+          font-size: 32px;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -106,6 +143,9 @@
           scale: 0 1;
           transform-origin: right;
           transition: scale 0.25s;
+          @include xxxlg-down {
+            height: 3px;
+          }
         }
       }
       .active::before {

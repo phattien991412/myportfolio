@@ -10,6 +10,13 @@
   border-bottom-right-radius: 40px;
   position: relative;
   overflow: hidden;
+
+  @include xlg-down {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100%;
+  }
+
   &::before {
     content: "";
     width: 1200px;
@@ -31,8 +38,16 @@
 
   &_welcome {
     margin: 5rem 0 0 48px;
+
+    @include xlg-down {
+      margin-top: 2rem;
+    }
     &_info {
       height: 70vh;
+
+      @include xlg-down {
+        height: auto;
+      }
       h3 {
         font-size: 48px;
         line-height: 68px;
@@ -55,6 +70,13 @@
         line-height: 123px;
         margin-top: 50px;
         max-width: 70%;
+
+        @include xlg-down {
+          max-width: 100%;
+          font-size: 96px;
+          line-height: 106px;
+          margin-top: 5rem;
+        }
       }
 
       button {
@@ -67,6 +89,12 @@
     &_skill {
       // margin: 201px 0 32px 0;
       height: 15vh;
+
+      @include xlg-down {
+        height: 100%;
+        margin-top: 7rem;
+        padding-bottom: 3rem;
+      }
       h5 {
         font-weight: 600;
         font-size: 20px;
@@ -74,12 +102,17 @@
       }
       ul {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         gap: 1.5rem;
         padding: 0;
         width: fit-content;
         margin-top: 32px;
         max-width: 70%;
+
+        @include md-down {
+          max-width: 100%;
+          flex-wrap: wrap;
+        }
         li {
           border: 1px solid #fff;
           border-radius: 50%;

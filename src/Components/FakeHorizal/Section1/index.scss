@@ -7,6 +7,10 @@
   position: relative;
   background: #ffce00;
   overflow: hidden;
+  @include xlg-down {
+    height: 100%;
+  }
+
   &::before {
     content: "";
     width: 1200px;
@@ -26,6 +30,10 @@
     font-size: 52px;
     line-height: 88px;
     margin: 48px 0 0 48px;
+
+    @include xxxlg-down {
+      margin-top: 16px;
+    }
   }
 
   &_container {
@@ -33,12 +41,30 @@
     gap: 80px;
     margin: 0 86px 0 48px;
     height: 60vh;
-    // max-width: 75%;
+
     p {
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
     }
+
+    @include xxxlg-down {
+      p {
+        font-size: 16px;
+      }
+
+      gap: 16px;
+    }
+
+    @include xlg-down {
+      height: 100%;
+      padding-bottom: 3rem;
+    }
+
+    @include md-down {
+      display: block;
+    }
+
     &_left {
       h3 {
         font-weight: 900;
@@ -46,6 +72,10 @@
         line-height: 54px;
         color: #19191a;
         margin: 40px 0 52px;
+
+        @include xxxlg-down {
+          margin: 24px 0;
+        }
       }
 
       .flip-card {
@@ -132,20 +162,32 @@
     }
 
     &_right {
-      
       h3 {
         line-height: 54px;
         color: #19191a;
         margin: 40px 0 52px;
         max-width: 70%;
-        @include xxlg-down {
-          max-width: 85% ;
-          margin-bottom: 16px;
+
+        @include xxxlg-down {
+          max-width: 85%;
+          margin: 24px 0;
+        }
+
+        @include xlg-down {
+          max-width: 100%;
         }
       }
-      
+
       .detail {
         max-width: 70%;
+        @include xxxlg-down {
+          max-width: 83%;
+        }
+
+        @include xlg-down {
+          max-width: 100%;
+        }
+
         h4 {
           font-weight: 600;
           font-size: 24px;
@@ -160,7 +202,7 @@
 
         p {
           line-height: 36px;
-          @include xxlg-down {
+          @include xxxlg-down {
             line-height: 32px;
           }
         }
@@ -169,6 +211,10 @@
           label {
             font-size: 18px;
             line-height: 24px;
+
+            @include xxxlg-down {
+              font-size: 16px;
+            }
           }
 
           li {

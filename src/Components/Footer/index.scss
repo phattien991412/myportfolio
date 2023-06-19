@@ -8,9 +8,13 @@
   position: relative;
   // color: #fff;
   // margin-top: 20rem;
+
+  @include xlg-down {
+   height: 1000%;   
+  }
   &_container {
     height: 100%;
-    width: 1  00%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -18,9 +22,23 @@
       max-width: 80%;
       margin: 0 auto;
       padding-top: 12rem;
+
+      @include xlg-down {
+      padding-top: 3rem;
+      text-align: center;
+      }
+
+      @include md-down {
+        max-width: 90%;
+        text-align: left;
+      }
       h3 {
         font-size: 36px;
         font-weight: 600;
+
+        @include md-down {
+          font-size: 28px;
+        }
       }
       p {
         font-size: 28px;
@@ -33,6 +51,18 @@
       margin: 0 auto;
       flex-grow: 1;
       padding-top: 4rem;
+
+      @include xlg-down {
+        padding-top: 1rem;
+        max-width: 60%;
+        margin-inline: auto;
+        text-align: center;
+      }
+
+      @include md-down {
+        max-width: 80%;
+        text-align: left;
+      }
       h3 {
         font-size: 32px;
         font-weight: 600;
@@ -47,7 +77,11 @@
         align-items: center;
         margin-top: 2rem;
         padding: 0;
-
+        text-align: left;
+        @include md-down {
+          flex-direction: column;
+          align-items: flex-start;
+        }
         li {
           display: flex;
           align-items: center;
@@ -93,6 +127,10 @@
 
           &:nth-child(2) {
             margin-left: 10rem;
+
+            @include md-down {
+              margin-left: 0;
+            }
           }
         }
       }
@@ -111,9 +149,17 @@
         justify-content: space-between;
         align-items: center;
         color: #000;
+
+        @include xlg-down {
+          max-width: 80%;
+        }
         h3 {
           font-size: 22px;
           font-weight: 600;
+
+          @include md-down {
+            font-size: 18px;
+          }
         }
 
         ul {

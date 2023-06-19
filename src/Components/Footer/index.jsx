@@ -12,13 +12,15 @@ const Footer = () => {
   const footerRef = useRef();
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
+      const matchMediaQuery = window.matchMedia("(min-width: 1200px)");
+      const startValue = matchMediaQuery.matches ? "400% 10%" : "-35% top";
       gsap
         .timeline({
           scrollTrigger: {
             trigger: footerRef.current,
-            start: "400% 10%",
+            start: startValue,
             end: "20% 50%",
-            // markers: true,
+            markers: true,
             toggleActions: "play none none reset",
             oncancel: () => {
               ctx.revert();

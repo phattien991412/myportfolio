@@ -48,3 +48,9 @@
         @content;
     }
 }
+
+@mixin xxxlg-down {
+    @media (max-width: #{$--screen-3xlg-min}) {
+        @content;
+    }
+}
