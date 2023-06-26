@@ -74,7 +74,7 @@ const Section1 = () => {
         <div className="section_1_container_right">
           <h3>Working experiences</h3>
           <div className="detail">
-            <h4>Inter Front-end Web Developer</h4>
+            <h4>Intern Front-end Web Developer</h4>
             <h5>Cong ty CP CN & KT Stech</h5>
             <p>08/2022 - 11/2022</p>
             <p>
@@ -94,13 +94,14 @@ const Section1 = () => {
             </p>
             <p>Collaborated with the BE team to create and update APIs.</p>
             <p>Build a core service to manage APIs.</p>
-            <ul>
+            <p>Contributed to building the company's websites.</p>
+            {/* <ul>
               <label htmlFor="">
                 Contributed to building the company's websites:
               </label>
               <li>
                 <span>
-                  Stechvn website:{" "}
+                  Stechvn website:
                   <a
                     href="https://stechvn.org"
                     target="_blank"
@@ -128,7 +129,7 @@ const Section1 = () => {
               <li>
                 <span>CMS for Dakshow</span>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
