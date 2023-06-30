@@ -1,10 +1,15 @@
-import gsap from "gsap";
 import React, { useLayoutEffect, useRef } from "react";
-import "./index.scss";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+
 import avatar from "../../../assets/img/avatar.jpg";
+
+import "./index.scss";
+
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+
 const Section1 = () => {
   const c1Ref = useRef();
   useLayoutEffect(() => {

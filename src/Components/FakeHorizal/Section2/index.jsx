@@ -5,7 +5,7 @@ import "./index.scss";
 import project1 from "../../../assets/img/project1.png";
 // import project2 from "../../../assets/img/project2.PNG";
 import project3 from "../../../assets/img/project3.PNG";
-import project4 from "../../../assets/img/project4.PNG";
+import project4 from "../../../assets/img/project6.PNG";
 import project5 from "../../../assets/img/project5.png";
 
 // import { Tooltip } from "@chakra-ui/react";
@@ -62,7 +62,7 @@ const Section2 = () => {
       feature:
         "Login/Register, Login with Google/Github, Add/Remove movie from list, modal info.",
       tech: "HTML/CSS, Javascript, ReactJs, NextJs, Next/Auth, TailwinCss, SwiperJs, SWR, Prisma, MongoDB",
-      link: "https://netflix-clone-47.vercel.app/" 
+      link: "https://netflix-clone-47.vercel.app/"
     },
     {
       img: project1,
@@ -81,12 +81,11 @@ const Section2 = () => {
     },
     {
       img: project4,
-      desc: "A clone UI of Fiverr website with full responsive",
-      feature:
-        "Search job - Book job - View detail - Pagination - SignIn / SignUp - Edit profile",
-      tech: "HTML/CSS, Javascript, ReactJs, TailwindCss, Redux, React Router Dom, Formik",
-      link: "https://fiverr-b568b.web.app/"
-    },
+      desc: "Landing page for Interior Design with full responsive",
+      feature: "Total 11 pages",
+      tech: "ReactJs/NextJs, TailwindCSS, GSAP, Ant Design, Masonry",
+      link: "https://interno-nine.vercel.app/"
+    }
   ];
 
   return (
